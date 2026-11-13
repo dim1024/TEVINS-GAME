@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fin-etic Rush</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="hud">
+            <div class="stat">SHIELD: <span id="health-display">❤️❤️❤️</span></div>
+            <div class="stat">SCORE: <span id="score-display">0</span></div>
+            <div class="stat">BEST: <span id="best-display">0</span></div>
+        </div>
+        
+        <canvas id="gameCanvas" width="900" height="550"></canvas>
+        
+        <div id="overlay">
+            <h1 id="overlay-title">FIN-ETIC RUSH</h1>
+            <p id="overlay-subtitle">Build speed on the ramps until you ignite into <span>HYPER-FIN MODE</span>, then launch into the Boss!</p>
+            <div class="controls-box">
+                <p><strong>A / D</strong> or <strong>Arrows</strong>: Run & Air Steer</p>
+                <p><strong>W / Up / Space</strong>: Jump</p>
+                <p><strong>S / Down (Hold)</strong>: Shark-Ball Curl (Builds speed on slopes!)</p>
+            </div>
+            <button id="start-btn">START GAME</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
