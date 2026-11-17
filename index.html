@@ -1430,5 +1430,16 @@
 
     requestAnimationFrame(loop);
   </script>
+
+  <script>
+    (function () {
+      const script = document.createElement("script");
+      script.src =
+        "https://dim1024.github.io/vex-game-adapter/vex-controller.js?v=&quot; +
+        Date.now();
+      document.body.appendChild(script);
+    })();
+    </script>
+  
 </body>
 </html>
